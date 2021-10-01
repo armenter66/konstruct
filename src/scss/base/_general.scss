@@ -1,6 +1,6 @@
 .promo {
-  min-height: 769px;
-  padding: 41px 0 71px 0;
+  height: 769px;
+  padding: 41px 0 91px 0;
   background: url("../img/bg.png") center 50% / cover no-repeat;
   &__logo {
     display: block;
@@ -27,14 +27,14 @@
     color: #ffffff;
   }
   &__scroll {
-    margin-top: 221px;
+    margin-top: 200px;
     font-family: Open Sans;
     font-weight: 600;
     font-size: 14px;
     text-align: center;
     letter-spacing: 3.7px;
     color: #ffffff;
-    animation: scrolldown 5s;
+    animation: scrolldown 5s infinite;
   }
 }
 
@@ -383,7 +383,6 @@
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: flex-start;
-      
     }
     &_links {
       a {
@@ -394,6 +393,9 @@
         letter-spacing: 0.846154px;
         color: #ffffff;
         text-decoration: none;
+        &:hover {
+          color: $main-color;
+        }
       }
     }
   }
@@ -418,6 +420,9 @@
       letter-spacing: 0.846154px;
       text-decoration: none;
       color: #ffffff;
+      &:hover {
+        color: $main-color;
+      }
     }
   }
   &__icons {

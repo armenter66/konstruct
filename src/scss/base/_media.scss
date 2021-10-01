@@ -96,6 +96,7 @@
   .story {
     &__images {
       flex-wrap: wrap;
+      justify-content: space-evenly;
       &_item {
         margin-top: 15px;
       }
